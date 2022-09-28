@@ -23,7 +23,7 @@
     echo "$n1<br>";
     //The output will be 2 it will just use 1 from $s as an integer next to the $n 1 because we used + instead of .
     //echo "$n2<br>";
-    //An error occurs becuase there is a string of words added to integer.
+    //An warning occurs becuase there is a string of words added to integer.
     echo "$n3<br>";
     //it will print hello
     echo "$n4<br>";
