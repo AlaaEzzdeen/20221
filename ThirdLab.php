@@ -26,7 +26,7 @@
         echo "<p>The result of adding $x and $y is ".add($x, $y)."</p>";
         echo "<p>The result of subtracting $x and $y is ".subtract($x, $y)."</p>";
         echo "<p>The result of multiplying $x and $y is ".multiply($x,$y)."</p>";
-        echo "<p>The result of dividing $x and $y is ".divide($x, $y)."</p>";                    
+        echo "<p>The result of dividing $x and $y is ".divide($x, $y)."</p>";                   
     ?>
 </body>
 </html>
