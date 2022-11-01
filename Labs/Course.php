@@ -5,6 +5,13 @@
         protected $cDesc;
         protected $cGrade;
 
+        function __construct($name,$code,$desc,$grade){
+            $this->cName = $name;
+            $this->cCode = $code;
+            $this->cDesc = $desc;
+            $this->cGrade = $grade;
+        }
+
         public function setCName($cName){
             $this->cName = $cName;
         }
@@ -31,13 +38,26 @@
             return $this->cGrade;
         }
 
-        public function isA($getCGrade){
-            if ($this->getCGrade() == "A+"){
+        public function isA(){
+            if ($this->getCGrade()== 'A+'){
             return true;
-        } else return false;
         }
+        }
+        public function courseDetails(){
+            if($this->isA() == true) {
+            echo "<tr class=A>";
+            echo "<td>".$this->getCName()."</td><td>".$this->getCCode()."</td><td>".$this->getCDesc()."</td><td>".$this->getCGrade()."</td>";
+            echo "</tr>";
+            }
+            else {
+            echo "<tr>";
+            echo "<td>".$this->getCName()."</td><td>".$this->getCCode()."</td><td>".$this->getCDesc()."</td><td>".$this->getCGrade()."</td>";
+            echo "</tr>";
+            }
+        }
+        
 
-        }
+}
  
     
 ?>
