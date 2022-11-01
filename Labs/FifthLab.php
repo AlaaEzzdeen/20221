@@ -24,13 +24,12 @@
     $course1 = new Course("Adv","SWE322","Advancad web","A+");
     $course2 = new Course("Intro to software","SWE202","Intro to software","A");
     $course3 = new Course("Differential ","MTH304","Differential equation","B+");
-
-
+    
     $courses = array($course1, $course2, $course3);
     echo "<table>";
-    echo "<tr><th>"."Course name"."</th><th>"."Course code"."</th><th>"."Course desc"."</th><th>"."Course grade";
+    echo "<tr><th> Course name </th><th> Course code </th><th> Course desc </th><th> Course grade </tr>";
     foreach($courses as $course){
-        echo $course->courseDetails();
+        $course->courseDetails();
     }
     echo "</table>"
     
