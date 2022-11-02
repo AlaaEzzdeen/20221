@@ -31,7 +31,7 @@
     foreach($courses as $course){
         $course->courseDetails();
     }
-    echo "</table>";    
-?>    
+    echo "</table>";
+?>
 </body>
 </html>
