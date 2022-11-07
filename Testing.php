@@ -17,8 +17,6 @@
         $ins = mysqli_query($con, "INSERT INTO first ( user_name, phone, email) VALUES ('Azqsqaa', 0341874808 ,'calaaa$')");
         echo var_dump("0239874808");
 
-   
-
         $student_name = "Khulud";
         $var_name = $student_name;
         $var_name_ref = &$student_name;
